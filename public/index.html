@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gemini AI Chatbot</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ustadz Online - Tanya Jawab Islam</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="container">
-    <h1>Gemini AI Chatbot</h1>
-    <div id="chat-box" class="chat-box"></div>
+    <div class="header">
+      <div class="icon-container">
+        <!-- Crescent and Star Icon -->
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="var(--accent-gold)" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1.844-3.414A7.962 7.962 0 0112 19c4.411 0 8-3.589 8-8s-3.589-8-8-8c-1.396 0-2.704.356-3.844.986A6 6 0 1010.156 18.586z" />
+        </svg>
+      </div>
+      <h1>Ustadz Online</h1>
+      <p class="subtitle">Tanya Jawab Seputar Agama Islam</p>
+    </div>
+
+    <div id="chat-box" class="chat-box">
+      <!-- Welcome message -->
+      <div class="message model">Assalamu'alaikum warahmatullahi wabarakatuh.
+
+        Saya Ustadz AI. Silakan tanyakan hal-hal seputar agama Islam, insyaAllah saya akan membantu menjawabnya.
+      </div>
+    </div>
+
     <form id="chat-form">
-      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required />
-      <button type="submit">Send</button>
+      <input type="text" id="user-input" placeholder="Tulis pertanyaanmu di sini..." autocomplete="off" required />
+      <button type="submit">
+        <span>Tanya</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
     </form>
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>

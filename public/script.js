@@ -19,7 +19,7 @@ form.addEventListener('submit', async function (e) {
   conversation.push({ role: 'user', text: userMessage });
 
   // Add "Thinking..." message to UI and get its reference
-  const thinkingMsgNode = appendMessage('model', 'Thinking...');
+  const thinkingMsgNode = appendMessage('model', 'Ustadz sedang berfikir...');
 
   try {
     const response = await fetch('/api/chat', {
